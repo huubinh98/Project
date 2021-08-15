@@ -45,6 +45,7 @@
     padding: 23px 19px ;
     letter-spacing: 2px;
     text-transform: uppercase; 
+    display: block;
 }
 
 .header__bars {

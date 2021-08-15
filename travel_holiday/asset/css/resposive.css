@@ -3,11 +3,15 @@
     display: none;
   }
 
-  .navbar__item-link.navbar__item-link-btn {
+  .navbar__item-link-btn {
     background-color: #ba71da;
-    padding: 9px 15px;
-    border-radius: 18px;
-    margin-left: 26px;
+    margin-left: 23px;
+    background-clip: padding-box;
+    padding: 11px 15px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 25px;
   }
 
   .subnav {
@@ -59,6 +63,24 @@
   /* .slider__wrap {
     background-size: cover;
   } */
+}
+
+@media (min-width: 1023px) and (max-width:1239px) {
+  .header__navbar,
+  .navbar__item-link-btn {
+    margin-left: unset;
+  }
+  
+  .navbar__item-link {
+    padding: 23px 14px;
+  }
+
+  .navbar__item-link-btn {
+    background-clip: padding-box;
+    padding: 11px;
+  }
+
+
 }
 
 /* Mobile & Tablet */
