@@ -1,0 +1,153 @@
+:root {
+    --white-color: #fff;
+    --text-heading-color: #555;
+    --text-color: #9a9a9a;
+    --color: #3DC9D9;
+    --red-color: #f76570;
+    --blue-color: #14b9d5;
+    --green-color: #1bbc9b;
+    --yellow-color: #ffcf05;
+    --violet-color: #ba71da;
+    --orange-color: #f3a46b;
+
+
+    --navbar-height: 104px;
+}
+
+.item-tag--red {
+    background-color: var(--red-color);
+}
+.item-tag-blue {
+    background-color: var(--blue-color);
+}
+
+.item-tag-green {
+    background-color: var(--green-color);
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.fas, .fa {
+    font-weight: 100 !important;
+}
+
+.subnav__item-tag {
+    font-size: 1.1rem;
+    padding: 3px 5px;
+    border-radius: 3px;
+    color: var(--white-color);
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 25px;
+}
+
+.btn {
+    font-size: 1.4rem;
+    font-family: 'poppins';
+    color: var(--white-color);
+    border-radius: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 9px 16px;
+    display: inline-block;
+}
+
+.yellow--color {
+    background-color: var(--yellow-color);
+}
+
+.red--color {
+    background-color: var(--red-color);
+}
+
+.violet--color {
+    background-color: var(--violet-color);
+}
+
+.blue--color {
+    background-color: var(--blue-color);
+}
+
+.orange--color {
+    background-color: var(--orange-color);
+}
+
+.green--color {
+    background-color: var(--green-color);
+}
+
+
+.backgroud--1 {
+    background: linear-gradient(90deg, #ffcf05, #ffa005);
+}
+
+.backgroud--2 {
+    background: linear-gradient(90deg, #f7676f, #f78966);
+}
+.backgroud--3 {
+    background: linear-gradient(90deg, #bb71d4, #d87181);
+}
+.backgroud--4 {
+    background: linear-gradient(90deg, #14bbd2, #14d3b3);
+}
+.backgroud--5 {
+    background: linear-gradient(90deg, #f3a66b, #f3c56b);
+}
+.backgroud--6 {
+    background: linear-gradient(90deg, #1bbc96, #1bbc67);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.text__travel {
+    padding: 20px 0;
+    font-size: 1.4rem;
+    font-family: 'poppins';
+    color: var(--text-color);
+    line-height: 2.7rem;
+    letter-spacing: 1px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.09);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: none;
+    animation: fadeIn 0.2s ease;
+}
