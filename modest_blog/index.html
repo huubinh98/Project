@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./asset/css/main.css">
     <link rel="stylesheet" href="./asset/css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
@@ -51,7 +52,7 @@
                         </li>
                     </ul>
                     <div class="nav__mobile hide-on-pc">
-                        <label for="nav__mobile-checkbox"class="nav__mobile-link">
+                        <label for="nav__mobile-checkbox" class="nav__mobile-link">
                             <i class="nav__mobile-icon fas fa-bars"></i>
                         </label>
                         <input type="checkbox" name="" hidden id="nav__mobile-checkbox" class="check__input">
@@ -89,42 +90,47 @@
             </div>
         </header>
         <div class="slider">
-            <div class="slider__img" style="background-image: url(./asset/img/slider.jpg);">
+            <div class="slider__img" data-aos="zoom-in" data-aos-duration="1500" style="background-image: url(./asset/img/slider.jpg);">
                 <div class="grid wide c-pd-30">
                     <div class="slider__content">
-                        <h1 class="slider__heading">welcome to our marketplace</h1>
-                        <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus,
+                        <h1 class="slider__heading" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000">welcome to our marketplace</h1>
+                        <p class="slider__text" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease" data-aos-delay="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus,
                             tristique ndolor
                             non, ornare sagittis dolor. Nulla vestibulu lacus ...</p>
-                        <ul class="slider__btn-list">
+                        <ul class="slider__btn-list" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease" data-aos-delay="1500">
                             <li class="slider__btn-item">
                                 <a href="" class="slider__btn-link">view more</a>
                             </li>
                             <li class="slider__btn-item">
                                 <a href="" class="slider__btn-link">video tour</a>
                             </li>
-        
+
                         </ul>
                     </div>
                 </div>
-                
+
             </div>
         </div>
         <div class="container">
             <div class="grid wide c-pd-30">
                 <div class="intro">
-                    <h3 class="section__name">we are modest.</h3>
+                    <h3 class="section__name" data-aos="fade-right"
+                    data-aos-duration="1000"data-aos="fade-right"
+                    data-aos-duration="1000">we are modest.</h3>
                     <div class="row">
                         <div class="col l-7 m-12 c-12 intro__text-wrap">
-                            <p class="intro__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi
+                            <p class="intro__text" data-aos="fade-up"
+                            data-aos-duration="1000" data-aos-easing="linear">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi
                                 metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie
                                 gravida. Crferm entum quismagna congue, vel sodales arcu vestibulum. Nunc lobortis dui
                                 magna, quis lacusullamcorper at.</p>
-                            <p class="intro__text">Phasellus sollicitudin ante eros ornare, sit amet luctus lorem
+                            <p class="intro__text" data-aos="fade-up"
+                            data-aos-duration="1000" data-aos-delay="300">Phasellus sollicitudin ante eros ornare, sit amet luctus lorem
                                 semper. Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu
                                 feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum odio convallis eget. vel
                                 sodales arcu vestibulum</p>
-                            <div class="intro__socical-list">
+                            <div class="intro__socical-list" data-aos="fade-up"
+                            data-aos-duration="1000">
                                 <a href="" class="intro__socical-link">
                                     <i class="intro__socical-icon fab fa-facebook-f"></i>
                                 </a>
@@ -145,7 +151,7 @@
                         <div class="col l-5 m-12 c-12">
                             <div class="intro__right">
                                 <ul class="intro__list">
-                                    <li class="intro__item">
+                                    <li class="intro__item" data-aos="fade-left" data-aos-duration="1000">
                                         <p class="intro__number">01</p>
                                         <section name="" id="" class="intro__item-content">
                                             <h5 class="intro__item-heading">Dedication to the customers</h5>
@@ -154,7 +160,7 @@
                                                 blandit ultricies.</p>
                                         </section>
                                     </li>
-                                    <li class="intro__item">
+                                    <li class="intro__item" data-aos="fade-left" data-aos-duration="1000">
                                         <p class="intro__number">02</p>
                                         <section name="" id="" class="intro__item-content">
                                             <h5 class="intro__item-heading">working closely with our clients</h5>
@@ -162,7 +168,7 @@
                                                 consectetur vitae. Suspendisse ut vehicula nibh.</p>
                                         </section>
                                     </li>
-                                    <li class="intro__item">
+                                    <li class="intro__item" data-aos="fade-left" data-aos-duration="1000">
                                         <p class="intro__number">03</p>
                                         <section name="" id="" class="intro__item-content">
                                             <h5 class="intro__item-heading">increase happiness</h5>
@@ -178,10 +184,12 @@
             </div>
             <div class="member">
                 <div class="grid wide c-pd-30">
-                    <h3 class="section__name">meet the team.</h3>
+                    <h3 class="section__name" data-aos="fade-right"
+                    data-aos-duration="1000">meet the team.</h3>
                     <div class="row">
                         <div class="col l-3 m-6 c-12">
-                            <div class="member__item">
+                            <div class="member__item" data-aos="fade-up"  data-aos-anchor-placement="top-center"
+                            data-aos-anchor-placement="left-center" data-aos-duration="1500">
                                 <img src="./asset/img/member1.jpg" alt="" class="member__item-img">
                                 <section class="member__info">
                                     <h5 class="member__name">Gloria Bromley</h5>
@@ -201,7 +209,8 @@
                             </div>
                         </div>
                         <div class="col l-3 m-6 c-12">
-                            <div class="member__item">
+                            <div class="member__item" data-aos="fade-up"  data-aos-anchor-placement="top-center"
+                            data-aos-anchor-placement="left-center" data-aos-duration="1500"  data-aos-delay="600">
                                 <img src="./asset/img/member2.jpg" alt="" class="member__item-img">
                                 <section class="member__info">
                                     <h5 class="member__name">Gloria Bromley</h5>
@@ -221,7 +230,8 @@
                             </div>
                         </div>
                         <div class="col l-3 m-6 c-12">
-                            <div class="member__item">
+                            <div class="member__item" data-aos="fade-up"  data-aos-anchor-placement="top-center"
+                            data-aos-anchor-placement="left-center" data-aos-duration="1500"  data-aos-delay="1200">
                                 <img src="./asset/img/member3.jpg" alt="" class="member__item-img">
                                 <section class="member__info">
                                     <h5 class="member__name">Gloria Bromley</h5>
@@ -241,7 +251,8 @@
                             </div>
                         </div>
                         <div class="col l-3 m-6 c-12">
-                            <div class="member__item">
+                            <div class="member__item" data-aos="fade-up"  data-aos-anchor-placement="top-center"
+                            data-aos-anchor-placement="left-center" data-aos-duration="1500"  data-aos-delay="1800">
                                 <img src="./asset/img/member4.jpg" alt="" class="member__item-img">
                                 <section class="member__info">
                                     <h5 class="member__name">Gloria Bromley</h5>
@@ -266,10 +277,12 @@
             </div>
             <div class="work-love">
                 <div class="grid wide c-pd-30">
-                    <h3 class="section__name section__name--color">lovely work.</h3>
+                    <h3 class="section__name section__name--color" data-aos="fade-right"
+                    data-aos-duration="1000">lovely work.</h3>
                     <div class="row">
                         <div class="col l-4 m-12 c-12">
-                            <div class="work-love__item">
+                            <div class="work-love__item" data-aos="fade-right"
+                             data-aos-duration="1000">
                                 <img src="./asset/img/showme1.jpg" alt="" class="work-love__img">
                                 <div class="wokr-love-overlay">
                                     <a href="" class="work-love__link">
@@ -280,7 +293,8 @@
                             </div>
                         </div>
                         <div class="col l-4 m-12 c-12">
-                            <div class="work-love__item">
+                            <div class="work-love__item" data-aos="fade-up"
+                             data-aos-duration="1000" data-aos-delay="600">
                                 <img src="./asset/img/showme2.jpg" alt="" class="work-love__img">
                                 <div class="wokr-love-overlay">
                                     <a href="" class="work-love__link">
@@ -291,7 +305,8 @@
                             </div>
                         </div>
                         <div class="col l-4 m-12 c-12">
-                            <div class="work-love__item">
+                            <div class="work-love__item" data-aos="fade-left"
+                             data-aos-duration="1000"  data-aos-delay="1200">
                                 <img src="./asset/img/showme3.jpg" alt="" class="work-love__img">
                                 <div class="wokr-love-overlay">
                                     <a href="" class="work-love__link">
@@ -302,7 +317,8 @@
                             </div>
                         </div>
                         <div class="col l-4 m-12 c-12">
-                            <div class="work-love__item">
+                            <div class="work-love__item"  data-aos="fade-right"
+                             data-aos-duration="1000" data-aos-delay="1800">
                                 <img src="./asset/img/showme4.jpg" alt="" class="work-love__img">
                                 <div class="wokr-love-overlay">
                                     <a href="" class="work-love__link">
@@ -313,7 +329,8 @@
                             </div>
                         </div>
                         <div class="col l-4 m-12 c-12">
-                            <div class="work-love__item">
+                            <div class="work-love__item" data-aos="fade-up"
+                              data-aos-duration="1000" data-aos-delay="2400">
                                 <img src="./asset/img/showme5.jpg" alt="" class="work-love__img">
                                 <div class="wokr-love-overlay">
                                     <a href="" class="work-love__link">
@@ -324,7 +341,8 @@
                             </div>
                         </div>
                         <div class="col l-4 m-12 c-12">
-                            <div class="work-love__item">
+                            <div class="work-love__item"  data-aos="fade-left"
+                              data-aos-duration="1000"  data-aos-delay="3000">
                                 <img src="./asset/img/showme6.jpg" alt="" class="work-love__img">
                                 <div class="wokr-love-overlay">
                                     <a href="" class="work-love__link">
@@ -340,10 +358,12 @@
             </div>
             <div class="technic">
                 <div class="grid wide c-pd-30">
-                    <h3 class="section__name">what we do.</h3>
+                    <h3 class="section__name" data-aos="fade-right"
+                    data-aos-duration="1000">what we do.</h3>
                     <div class="row">
                         <div class="col l-3 m-6 c-12">
-                            <div class="technic__item">
+                            <div class="technic__item" data-aos="fade-up"
+                            data-aos-duration="1000" data-aos-easing="linear">
                                 <img src="./asset/img/cogs.png" alt="" class="technic__item-img">
                                 <h5 class="technic__item-name">Easy theme Setup</h5>
                                 <p class="technic__item-desc">Nunc mattis lorem in leo lobortis, ut venenatis justo
@@ -352,7 +372,8 @@
                             </div>
                         </div>
                         <div class="col l-3 m-6 c-12">
-                            <div class="technic__item">
+                            <div class="technic__item" data-aos="fade-up"
+                            data-aos-duration="1000" data-aos-easing="linear">
                                 <img src="./asset/img/pencil.png" alt="" class="technic__item-img">
                                 <h5 class="technic__item-name">pixel perfect design</h5>
                                 <p class="technic__item-desc">Nunc mattis lorem in leo lobortis, ut venenatis justo
@@ -360,7 +381,8 @@
                             </div>
                         </div>
                         <div class="col l-3 m-6 c-12">
-                            <div class="technic__item">
+                            <div class="technic__item" data-aos="fade-up"
+                            data-aos-duration="1000" data-aos-easing="linear">
                                 <img src="./asset/img/mobile.png" alt="" class="technic__item-img">
                                 <h5 class="technic__item-name">responsive display</h5>
                                 <p class="technic__item-desc">Nunc mattis lorem in leo lobortis, ut venenatis justo
@@ -368,7 +390,8 @@
                             </div>
                         </div>
                         <div class="col l-3 m-6 c-12">
-                            <div class="technic__item">
+                            <div class="technic__item" data-aos="fade-up"
+                            data-aos-duration="1000" data-aos-easing="linear">
                                 <img src="./asset/img/clock.png" alt="" class="technic__item-img">
                                 <h5 class="technic__item-name">24/7 support</h5>
                                 <p class="technic__item-desc">Nunc mattis lorem in leo lobortis, ut venenatis justo
@@ -376,7 +399,8 @@
                             </div>
                         </div>
                         <div class="col l-3 m-6 c-12">
-                            <div class="technic__item">
+                            <div class="technic__item" data-aos="fade-up"
+                            data-aos-duration="1000" data-aos-easing="linear">
                                 <img src="./asset/img/cogs.png" alt="" class="technic__item-img">
                                 <h5 class="technic__item-name">Easy theme Setup</h5>
                                 <p class="technic__item-desc">Nunc mattis lorem in leo lobortis, ut venenatis justo
@@ -385,7 +409,8 @@
                             </div>
                         </div>
                         <div class="col l-3 m-6 c-12">
-                            <div class="technic__item">
+                            <div class="technic__item" data-aos="fade-up"
+                            data-aos-duration="1000" data-aos-easing="linear">
                                 <img src="./asset/img/pencil.png" alt="" class="technic__item-img">
                                 <h5 class="technic__item-name">pixel perfect design</h5>
                                 <p class="technic__item-desc">Nunc mattis lorem in leo lobortis, ut venenatis justo
@@ -393,7 +418,8 @@
                             </div>
                         </div>
                         <div class="col l-3 m-6 c-12">
-                            <div class="technic__item">
+                            <div class="technic__item" data-aos="fade-up"
+                            data-aos-duration="1000" data-aos-easing="linear">
                                 <img src="./asset/img/mobile.png" alt="" class="technic__item-img">
                                 <h5 class="technic__item-name">responsive display</h5>
                                 <p class="technic__item-desc">Nunc mattis lorem in leo lobortis, ut venenatis justo
@@ -401,7 +427,8 @@
                             </div>
                         </div>
                         <div class="col l-3 m-6 c-12">
-                            <div class="technic__item">
+                            <div class="technic__item" data-aos="fade-up"
+                            data-aos-duration="1000" data-aos-easing="linear">
                                 <img src="./asset/img/clock.png" alt="" class="technic__item-img">
                                 <h5 class="technic__item-name">24/7 support</h5>
                                 <p class="technic__item-desc">Nunc mattis lorem in leo lobortis, ut venenatis justo
@@ -413,10 +440,11 @@
             </div>
             <div class="features">
                 <div class="grid wide c-pd-30">
-                    <h3 class="section__name section__name--color">what we do.</h3>
+                    <h3 class="section__name section__name--color" data-aos="fade-right"
+                    data-aos-duration="1000">Features</h3>
                     <div class="row">
                         <div class="col l-4 m-12 c-12">
-                            <div class="feature__item">
+                            <div class="feature__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1500">
                                 <img src="./asset/img/future1.jpg" alt="feature" class="feature__item-img">
                                 <h5 class="feature__item-name">Product Design: Eames Chairs</h5>
                                 <p class="feature__item-desc">Eames designs are certainly iconic. Everyone of us know at
@@ -425,7 +453,7 @@
                             </div>
                         </div>
                         <div class="col l-4 m-12 c-12">
-                            <div class="feature__item">
+                            <div class="feature__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1500" data-aos-delay="600">
                                 <img src="./asset/img/future2.jpg" alt="feature" class="feature__item-img">
                                 <h5 class="feature__item-name">Elegant and Colorful Logos</h5>
                                 <p class="feature__item-desc">I’ve always found logo design to be one of the most
@@ -434,7 +462,7 @@
                             </div>
                         </div>
                         <div class="col l-4 m-12 c-12">
-                            <div class="feature__item">
+                            <div class="feature__item" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1500" data-aos-delay="1200">
                                 <img src="./asset/img/future3.jpg" alt="feature" class="feature__item-img">
                                 <h5 class="feature__item-name">Product Design: Eames Chairs</h5>
                                 <p class="feature__item-desc">It’s always interesting to see another designer’s take on
@@ -447,7 +475,8 @@
             </div>
             <div class="contact">
                 <div class="grid wide c-pd-30">
-                    <h3 class="section__name">what we do.</h3>
+                    <h3 class="section__name" data-aos="fade-right"
+                    data-aos-duration="1000">what we do.</h3>
                 </div>
                 <div class="contact__map" style="background-image: url(./asset/img/map.jpg);">
                     <!-- <img src="./asset/img/map.jpg" alt="map" class="contact__map-img"> -->
@@ -515,10 +544,14 @@
                         </a>
                     </div>
                 </div>
-
             </div>
         </footer>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

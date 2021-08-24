@@ -1,3 +1,7 @@
+.main {
+    overflow: hidden;
+}
+
 .header {
     background-color: var(--header-color);
     height: 80px;
