@@ -11,22 +11,8 @@
     justify-content: space-between;
 }
 
-.nav__list {
-    display: flex;
-}
-
 .nav__item {
     margin-left: 6px;
-}
-
-.nav__item-link:hover {
-    border: 2px solid #5b6168;
-    border-radius: 6px;
-}
-
-.nav__item-link--active {
-    border: 2px solid var(--green-color);
-    border-radius: 6px;
 }
 
 .nav__item--active:first-child a {
@@ -39,26 +25,65 @@
     color: var(--text-color);
 }
 
-/* slider */
 
-.slider {
-    position: relative;
+/* ----------------nav__mobile------------ */
+.nav__bars {
+    max-width: 300px;
+    width: 100%;
+    background-color: var(--backgoud-color);
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 54px 30px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.4s linear;
 }
+
+#nav__mobile-checkbox:checked ~ .nav__bars {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#nav__mobile-checkbox:checked ~ .overlay {
+    display: block;
+}
+
+.nav__bars-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.nav__bars-close-icon {
+    font-size: 2.6rem;
+    color: var(--white-color);
+    font-weight: 300 !important;
+}
+
+/* -------------slider-------------------- */
+
+/* .slider {
+    position: relative;
+} */
 
 .slider__img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 34%;
-    filter: brightness(80%);
+    padding: 14% 0;
+    filter: brightness(90%);
+    position: relative;
 }
 
-.slider__content {
+/* .slider__content {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
-}
+} */
 
 .slider__heading {
     font-size: 3.6rem;
@@ -70,7 +95,7 @@
 .slider__text {
     font-size: 1.6rem;
     color: #ccd0d7;
-    width: 600px;
+    max-width: 600px;
     line-height: 2.6rem;
     padding-bottom: 30px;
 }
@@ -495,6 +520,13 @@
     opacity: 0.8;
 }
 
+.contact__map {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30%;
+}
+
 /* ---------footer----------- */
 
 .footer {
@@ -510,6 +542,7 @@
 }
 
 .footer__text {
+    text-align: center;
     font-size: 1.4rem;
     color: var(--white-color);
 }
