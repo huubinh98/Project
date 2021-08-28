@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1404px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-small {
+    max-width: 1172px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    font-size: 2rem;
+    line-height: 8rem;
+    color: #fbfcfc;
+    background-color: #2870db;
+    border-radius: 40px;
+    display: inline-block;
+    padding: 0 66px;
+    box-shadow: 0 22px 24px rgba(17, 83, 165, 0.21);
+    transition: 0.25s ease;
+}
+
+.heading-name {
+    font-size: 3.6rem;
+    line-height: 5rem;
+    text-align: center;
+    margin: 0 auto;
+    color: #263238;
+    margin-bottom: 101px;
+    max-width: 1000px;
+}
+
+.btn:hover {
+    background-color: #1153a5;
+}
+
+/* ----------------------- */
+
+.header {
+    margin: 0 auto;
+    max-width: 1900px;
+    height: 1026px;
+    background-color: white;
+    background-image: url(./image/backgroudleft1.png), url(./image/Muncak-Landing-Page.png);
+    background-position: left bottom, right top;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 85px;
+}
+
+.logo{
+
+}
+.logo-link{
+
+}
+.logo-img{
+
+}
+.nav-list{
+
+}
+.nav-item{
+    display: inline-block;
+}
+.nav-item-link{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3.6rem;
+    color: #fff;
+    padding: 0 36px;
+    display: inline-block;
+}
+
+.nav-highlight {
+    background-color: #fff;
+    color: #14215e;
+    border-radius: 14px;
+}
+
+.heading-banner {
+    font-size: 5rem;
+    line-height: 6rem;
+    color: #1c2056;
+    margin-top: 144px;
+    max-width: 400px;
+}
+
+.heading-desc {
+    font-size: 1.8rem;
+    line-height: 4rem;
+    color: rgba(45, 32, 88, 0.65);
+    max-width: 400px;
+    margin-top: 43px;
+    margin-bottom: 103px;
+}
+
+.btn-heading {
+    margin-bottom: 310px;
+}
+
+
+/* -----------about---------------- */
+.about {
+    margin-top: 158px;
+    margin-bottom: 98px;
+    background-image: url(./image/backgroudleft2.png), url(./image/Muncak-Landing-Page2.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right center;
+}
+
+.about-wrap {
+    margin-bottom: 105px;
+}
+
+.hearding-name-about {
+    max-width: 700px;
+}
+
+.about-item {
+    max-width: 549px;
+}
+
+.about-item:nth-child(2n + 1) {
+    margin-left: auto;
+    margin-top: -150px;
+}
+
+.about-item:nth-child(2n + 2) {
+    margin-top: -109px;
+}
+
+.about-item:first-of-type {
+    margin-top: 0;
+}
+
+.about-img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 63px;
+}
+
+.about-content {
+    padding: 72px;
+    border-radius: 18px;
+    background-color: #fff;
+    box-shadow: 0 27px 43px rgb(32 94 171 / 10%);
+}
+
+.about-content-heading {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: #263238;
+    padding-bottom: 48px;
+}
+
+.about-content-desc {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    color: #546e7a;
+}
+
+.btn-about {
+    float: right;
+    margin-right: 163px;
+    margin-top: -226px;
+}
+
+/* -----------customer-------------- */
+
+.about-custumer {
+    margin-top: 105px;
+}
+
+.customer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customer-text {
+    text-align: center;
+    font-size: 2.2rem;
+    line-height: 2.3rem;
+    color: #263238;
+}
+
+.customer-text span {
+    font-size: 3.6rem;
+    display: block;
+    color: #1a56a3;
+    font-weight: 700;
+    line-height: 3.4rem;
+    padding: 34px 0;
+}
+
+/* --------New-------------- */
+
+.new {
+    padding-top: 98px;
+    padding-bottom: 102px;
+}
+
+.new-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-item {
+    border-radius: 18px;
+    box-shadow: 0 27px 43px rgb(32 94 171 / 10%);
+    max-width: 355px;
+    overflow: hidden;
+}
+
+.new-item-img {
+    height: 222px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.new-item-text {
+    padding: 34px;
+}
+
+.new-item-name {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    color: #263238;
+    padding-bottom: 33px;
+}
+
+.new-item-desc {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    padding-bottom: 30px;
+}
+
+.new-item-link {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: #2870db;
+}
+
+
+/* -----------contact-footer------------ */
+.contact-footer {
+    padding-top: 102px;
+}
+
+.form-contact {
+    padding: 82px 210px 100px;
+    background-color: #3072c0;
+    background-image: url(./image/backgroudcontact.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.contact-heading {
+    font-size: 3.6rem;
+    line-height: 4.5rem;
+    color: #fff;
+    padding-bottom: 68px;
+}
+
+.form-input {
+    display: block;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    height: 69px;
+    outline: none;
+    border: navajowhite;
+    margin-bottom: 38px;
+    border-radius: 20px;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    padding: 0 37px;
+    color: rgba(84, 110, 122, 0.6);
+}
+
+.form-input:last-child {
+    margin-bottom: 71px;
+}
+
+.btn-contact {
+    height: 80px;
+    padding: 0 74px;
+    margin: 0 auto;
+    display: block;
+    line-height: 4rem;
+    color: #fbfcfc;
+    background-color: #00aeff;
+    border: none;
+    outline: navajowhite;
+    border-radius: 40px;
+}

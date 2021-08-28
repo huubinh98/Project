@@ -24,6 +24,7 @@
 }
 
 .nav__item-link {
+    border: 2px solid transparent;
     padding: 9px 23px;
     font-size: 1.4rem;
     color: var(--text-color);
@@ -471,13 +472,8 @@
     position: relative;
 }
 
-.form__contact-label {
-    color: var(--text-color);
-    display: block;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    padding-left: 4px;
-    padding-bottom: 10px;
+.form__contact-wrap {
+    /* position: relative; */
 }
 
 .form__input-contact {
@@ -489,7 +485,37 @@
     color: var(--text-color);
     outline: none;
     border-radius: 3px;
+    /* border: 2px solid transparent;
+    transition: 0.25s ease; */
 }
+
+/* .form__input-contact:focus {
+    border: 2px solid var(--backgoud-color);
+} */
+
+.form__contact-label {
+    /* position: absolute; */
+    /* top: 50%;
+    transform: translateY(-50%); */
+    color: var(--text-color);
+    display: block;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding-left:6px;
+    padding-bottom: 14px;
+    /* user-select: none;
+    pointer-events: none;
+    transition: 0.25s ease; */
+}
+/* .form__input-contact:not(:placeholder-shown) + .form__contact-label,
+.form__input-contact:focus + .form__contact-label {
+    color: var(--backgoud-color);
+    top: 0;
+    left: 18px;
+    padding: 0 10px;
+    background-color: var(--white-color);
+
+} */
 
 .form__mess {
     padding-top: 30px;
